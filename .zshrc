@@ -41,3 +41,12 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export RBENV_ROOT=/usr/local/opt/rbenv
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Automatically connect to tmux
+if [[ "$TERM" != "screen-256color" ]] then
+  tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+  exit
+fi
