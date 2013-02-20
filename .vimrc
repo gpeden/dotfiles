@@ -133,3 +133,12 @@ set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 set t_Co=256
 
 let g:Powerline_symbols = 'fancy'
+
+" undotree
+
+:nmap \u :UndotreeToggle<CR>
+
+if has("persistent_undo")
+    set undodir = "~/.vim_undo"
+    set undofile
+endif
