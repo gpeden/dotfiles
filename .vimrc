@@ -10,7 +10,7 @@ syntax enable
 execute pathogen#infect()
 
 " http://www.linux.com/archive/feature/120126
-set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}\ %{&fo}]\ [%l/%L,%v\ %p%%]\ [HEX=\%02.2B]
+" set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}\ %{&fo}]\ [%l/%L,%v\ %p%%]\ [HEX=\%02.2B]
 " Always show the status line
 set laststatus=2
 " Tabs and indentation (Default to two spaces)
