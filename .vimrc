@@ -23,6 +23,9 @@ filetype indent on "indent depends on filetype
 " JJM Enable line numbers, useful for discussion when on a projector
 set number
 
+" set toggle for line numbers
+nmap \n :set nu!<CR>
+
 " JJM Highlight extra white space.
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 " Give an indicator when we approach col 80 (>72)
