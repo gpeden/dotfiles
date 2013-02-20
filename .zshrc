@@ -37,7 +37,7 @@ plugins=(git rbenv)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export RBENV_ROOT=/usr/local/opt/rbenv
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
@@ -50,3 +50,6 @@ if [[ "$TERM" != "screen-256color" ]] then
   tmux attach-session -t "$USER" || tmux new-session -s "$USER"
   exit
 fi
+
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+export TERM="xterm-256color"
