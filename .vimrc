@@ -26,6 +26,12 @@ set number
 " set toggle for line numbers
 nmap \n :set nu!<CR>
 
+" set toggle for paste
+nmap \p :set paste!<CR>
+
+" set toggle for highlighting
+nmap \h :nohl<CR>
+
 " JJM Highlight extra white space.
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 " Give an indicator when we approach col 80 (>72)

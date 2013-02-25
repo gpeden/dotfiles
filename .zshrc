@@ -37,13 +37,14 @@ plugins=(git rbenv)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export RBENV_ROOT=/usr/local/opt/rbenv
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 # Automatically connect to tmux
 if [[ "$TERM" != "screen-256color" ]] then
@@ -53,3 +54,4 @@ fi
 
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export TERM="xterm-256color"
+export PERL5LIB=/usr/local/Cellar/dpkg/1.15.8.13/:$PERL5LIB
