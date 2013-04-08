@@ -151,3 +151,6 @@ if has("persistent_undo")
     set undodir = "~/.vim_undo"
     set undofile
 endif
+" Set NERDTree up to show hidden files
+let NERDTreeShowHidden=1
+:call Align#AlignCtrl('=p1P0','&','\\')
