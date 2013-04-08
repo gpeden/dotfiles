@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/proj/env/veewee/templates/CentOS-5.8-x86_64-netboot'
+let g:netrw_dirhist_2='/proj/env/puppet-vagrant-boxes/definitions/ubuntu-server-12042-x64-vbox-428'
+let g:netrw_dirhist_3='/proj/env/veewee/templates/CentOS-6.4-i386-netboot'
+let g:netrw_dirhist_4='/proj/env/puppet-vagrant-boxes/definitions/centos-64-x64-vbox-428-nocm'
