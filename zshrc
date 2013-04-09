@@ -47,10 +47,10 @@ export PATH="/usr/local/heroku/bin:$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 # Automatically connect to tmux
-if [[ "$TERM" != "screen-256color" ]] then
-  tmux attach-session -t "$USER" || tmux new-session -s "$USER"
-  exit
-fi
+#if [[ "$TERM" != "screen-256color" ]] then
+ # tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+ # exit
+#fi
 
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 #export TERM="xterm-256color"
