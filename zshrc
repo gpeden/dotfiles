@@ -57,3 +57,5 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 export PERL5LIB=/usr/local/Cellar/dpkg/1.15.8.13/:$PERL5LIB
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
