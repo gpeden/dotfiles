@@ -37,7 +37,7 @@ plugins=(git rbenv)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:~/.packer
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export RBENV_ROOT=/usr/local/opt/rbenv
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
@@ -61,3 +61,5 @@ export PERL5LIB=/usr/local/Cellar/dpkg/1.15.8.13/:$PERL5LIB
 export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 
 autoload -U zmv
+
+export AWS_CONFIG_FILE=~/.awsconfig
