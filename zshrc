@@ -63,3 +63,5 @@ export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 autoload -U zmv
 
 export AWS_CONFIG_FILE=~/.awsconfig
+
+. ~/.backline
