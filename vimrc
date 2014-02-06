@@ -155,3 +155,5 @@ endif
 let NERDTreeShowHidden=1
 :call Align#AlignCtrl('=p1P0','&','\\')
 set colorcolumn=80
+set background=dark
+colorscheme solarized
