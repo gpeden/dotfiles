@@ -63,5 +63,7 @@ export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 autoload -U zmv
 
 export AWS_CONFIG_FILE=~/.awsconfig
-
+export AWS_KEYSET=eshamow_keys
+export AWS_DEFAULT_REGION=us-west-2
 . ~/.backline
+. ~/.github_keys
