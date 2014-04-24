@@ -1,7 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/proj/env/puppet-vagrant-boxes/definitions/debian-73-x64-vf602'
 let g:netrw_dirhist_2='/proj/env/puppet-vagrant-boxes/definitions/debian-73-x64-vf602-nocm'
 let g:netrw_dirhist_3='/proj/env/puppet-vagrant-boxes/definitions/debian-73-x64-vbox436'
 let g:netrw_dirhist_4='/proj/env/puppet-vagrant-boxes/definitions/debian-608-x64-vbox436'
 let g:netrw_dirhist_5='/proj/env/puppet-vagrant-boxes/definitions/debian-608-x64-vf602-nocm'
+let g:netrw_dirhist_6='/proj/method/puppet-cobbler/manifests/web'
+let g:netrw_dirhist_7='/proj/method/puppet-cobbler'
+let g:netrw_dirhist_8='/proj/eshamow/scaling/test'
