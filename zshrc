@@ -39,7 +39,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export RBENV_ROOT=/usr/local/opt/rbenv
-[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -64,6 +63,5 @@ autoload -U zmv
 export AWS_CONFIG_FILE=~/.awsconfig
 export AWS_KEYSET=eshamow_keys
 export AWS_DEFAULT_REGION=us-west-2
-. ~/.backline
-. ~/.github_keys
 export PATH=$PATH:~/google-cloud-sdk/bin
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
