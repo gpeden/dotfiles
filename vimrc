@@ -1,13 +1,19 @@
-" Jeff McCune <jeff@puppetlabs.com>
-" 2010-07-28
-" Vim customizations for Puppet Labs
-" This should be useful for presentations, demos, and training.
-
 set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-surround'
+Bundle 'rodjek/vim-puppet'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'godlygeek/tabular'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
 filetype plugin on
 filetype indent on
 syntax enable
-execute pathogen#infect()
 
 " http://www.linux.com/archive/feature/120126
 " set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}\ %{&fo}]\ [%l/%L,%v\ %p%%]\ [HEX=\%02.2B]
