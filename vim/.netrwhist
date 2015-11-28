@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/proj/method/ergroupkeys/manifests'
 let g:netrw_dirhist_2='/proj/puppet/eshamow-puppetmaster'
 let g:netrw_dirhist_3='/proj/slalom/puppet-prosody/manifests'
 let g:netrw_dirhist_4='/proj/eshamow/dockerfiles/gorgonshadow/gorgonshadow-seed'
 let g:netrw_dirhist_5='/proj/slalom/pge/controlrepo/dist/profile/manifests/redhat7/jenkins'
+let g:netrw_dirhist_6='/Users/eric/.tmux'
