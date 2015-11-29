@@ -1,2 +1,5 @@
 .vim/.netrwhist
 .DS_Store
+tmux/plugins/*
+vim/bundle/*
+vim/colors/*
