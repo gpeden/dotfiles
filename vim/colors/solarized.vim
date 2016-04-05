@@ -1,1 +1,1 @@
-/Users/eric/.vim/bundle/vim-colors-solarized/colors/solarized.vim
+/Users/eric.shamow/.vim/bundle/vim-colors-solarized/colors/solarized.vim

@@ -11,10 +11,16 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'fatih/vim-go'
+Bundle 'Valloric/YouCompleteMe'
 filetype plugin on
 filetype indent on
 syntax enable
+
+" plugins expect bash - not fish, zsh, etc
+set shell=bash
 
 " http://www.linux.com/archive/feature/120126
 " set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}\ %{&fo}]\ [%l/%L,%v\ %p%%]\ [HEX=\%02.2B]
@@ -164,3 +170,21 @@ let NERDTreeShowHidden=1
 set colorcolumn=80
 set background=light
 colorscheme solarized
+
+" we want to tell the syntastic module when to run
+" we want to see code highlighting and checks when  we open a file
+" but we don't care so much that it reruns when we close the file
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" use goimports for formatting
+let g:go_fmt_command = "goimports"
+
+" turn highlighting on
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']

@@ -70,4 +70,8 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 alias ggrf='git log --pretty --color --date=relative --graph --decorate=short --abbrev-commit --name-status'
 export ANDROID_HOME=/usr/local/opt/android-sdk
-
+eval "$(thefuck --alias)"
+export GOROOT=/usr/local/go
+export GOPATH=/proj/go
+export PATH=$PATH:$GOROOT/bin
+export POWERLINE_CONFIG_COMMAND=~/Library/Python/2.7/bin/powerline-config
