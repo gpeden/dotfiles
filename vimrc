@@ -15,6 +15,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'fatih/vim-go'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'vim-scripts/ruby-matchit'
 filetype plugin on
 filetype indent on
 syntax enable
@@ -193,3 +194,4 @@ let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+let g:hl_matchit_enable_on_vim_startup = 1

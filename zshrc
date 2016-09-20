@@ -71,7 +71,13 @@ source $(brew --prefix nvm)/nvm.sh
 alias ggrf='git log --pretty --color --date=relative --graph --decorate=short --abbrev-commit --name-status'
 export ANDROID_HOME=/usr/local/opt/android-sdk
 eval "$(thefuck --alias)"
-export GOROOT=/usr/local/go
+export GOROOT=/usr/local/opt/go
 export GOPATH=/proj/go
 export PATH=$PATH:$GOROOT/bin
 export POWERLINE_CONFIG_COMMAND=~/Library/Python/2.7/bin/powerline-config
+alias be='bundle exec'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export PATH=$PATH:/usr/local/share/dotnet
+source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
