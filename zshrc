@@ -1,83 +1,87 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+# If you come from bash you might have to change your $PATH.
+export PATH=~/.rbenv/shims:$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:$PATH
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/georgep/.oh-my-zsh
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
+# Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Comment this out to disable bi-weekly auto-update checks
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
+# Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
-# Uncomment following line if you want to disable colors in ls
+# Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
-# Uncomment following line if you want to disable autosetting terminal title.
+# Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment following line if you want red dots to be displayed while waiting for completion
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rbenv docker)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export RBENV_ROOT=/usr/local/opt/rbenv
+# User configuration
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+# export MANPATH="/usr/local/man:$MANPATH"
 
-# Automatically connect to tmux
-#if [[ "$TERM" != "screen-256color" ]] then
- # tmux attach-session -t "$USER" || tmux new-session -s "$USER"
- # exit
-#fi
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
 
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
-#export TERM="xterm-256color"
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
-export PERL5LIB=/usr/local/Cellar/dpkg/1.15.8.13/:$PERL5LIB
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
-export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-autoload -U zmv
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export AWS_CONFIG_FILE=~/.awsconfig
-export AWS_KEYSET=eshamow_keys
-export AWS_DEFAULT_REGION=us-west-2
-export PATH=$PATH:~/google-cloud-sdk/bin
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-alias ggrf='git log --pretty --color --date=relative --graph --decorate=short --abbrev-commit --name-status'
-export ANDROID_HOME=/usr/local/opt/android-sdk
-eval "$(thefuck --alias)"
-export GOROOT=/usr/local/opt/go
-export GOPATH=/proj/go
-export PATH=$PATH:$GOROOT/bin
-export POWERLINE_CONFIG_COMMAND=~/Library/Python/2.7/bin/powerline-config
-alias be='bundle exec'
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-export PATH=$PATH:/usr/local/share/dotnet
-source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+eval "$(rbenv init -)"
